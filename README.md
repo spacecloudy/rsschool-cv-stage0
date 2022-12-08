@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://github.com/spacecloudy/rsschool-cv.git
+https://spacecloudy.github.io/rsschool-cv/cv
