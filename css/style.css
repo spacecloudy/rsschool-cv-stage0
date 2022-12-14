@@ -42,14 +42,25 @@ body {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
   /* Так как ссылки - строчные элементы, вертикальные padding у них создаются, но не отталкивают другие элементы. Для строчных элементов вместо вертикальных padding удобнее указывать высоту строки.*/
 }
+
 a:hover {
-  color: #339900;
-  text-decoration: underline;
+  /*срабатывает, когда пользователь наводит на элемент мышью, но не обязательно активирует его*/
+  color: #31c242; /*цвет ссылки при наведении мыши*/
+  text-decoration: underline; /*подчеркивание ссылки при наведении мыши*/
+}
+.name {
+  font-weight: 500;
+  font-style: italic; /*Курсивное начертание.*/
+  color: dodgerblue;
+  text-transform: capitalize; /*Первый символ каждого слова в предложении будет заглавным. Остальные символы свой вид не меняют.*/
+}
+.text-italic {
+  font-style: italic;
 }
 .section-title {
   font-size: 20px;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр).*/
   letter-spacing: 5px;
-  color: #829985;
+  color: dodgerblue;
 }
