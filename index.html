@@ -13,33 +13,37 @@
       <div class="container">
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-item">
+            <li>
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li>
               <a href="#summary" class="nav-link">Summary</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a href="#skills" class="nav-link">Skills</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a href="#Code" class="nav-link">Code Example</a>
             </li>
 
-            <li class="nav-item">
+            <li>
               <a href="#work" class="nav-link">Work experience</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a href="#Education" class="nav-link">Education</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a href="#languages" class="nav-link">Languages</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="main">
+    <main class="main main-container">
       <div class="container">
-        <section class="section" id="Profile">
-          <img src="./assets/img/NASTYA.jpg" alt="My photo" />
+        <section class="section section-profile" id="profile">
+          <img src="./assets/img/NASTYA.jpg" alt="My photo" class="photo" />
+
           <span class="name">
             <h1>Anastasiia Miranovich</h1>
             <p>
@@ -48,6 +52,40 @@
               </b>
             </p>
           </span>
+        </section>
+        <section class="section" id="Contacts">
+          <h2 class="section-title">Contacts</h2>
+
+          <ul>
+            <li>
+              Email:
+              <a
+                href="mailto:spreecivic@gmail.com"
+                title="Email"
+                class="section-item"
+              >
+                spreecivic@gmail.com</a
+              >
+            </li>
+            <li>
+              Github:
+              <a href="https://github.com/spacecloudy" title="Github">
+                spacecloudy
+              </a>
+            </li>
+            <li>
+              Telegram:
+              <a href="https://t.me/spacecloudy" title="Telegram">
+                @spacecloudy
+              </a>
+            </li>
+            <li>
+              Discord:
+              <a href="https://discord.gg/952790770203635752" title="Discord"
+                >spacecloudy#6912</a
+              >
+            </li>
+          </ul>
         </section>
         <section class="section" id="Summary">
           <h2 class="section-title">Summary</h2>
@@ -69,7 +107,9 @@
         </section>
         <section class="section" id="Code Example">
           <h2 class="section-title">Code Example</h2>
-          <p>``` function multiply(a, b) { return a * b } ```</p>
+          <pre><code>
+function multiply(a, b) 
+{ return a * b }</code></pre>
         </section>
         <section class="section" id="Work experience">
           <h2 class="section-title">Work experience</h2>
@@ -126,7 +166,23 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container footer-container">
+        <div>
+          © 2022
+
+          <a href="https://github.com/spacecloudy" class="github nav-link"
+            >spacecloudy</a
+          >
+        </div>
+        <div>
+          <a href="https://rs.school/js/">
+            <img
+              class="icon"
+              src="/rsschool-cv/assets/img/rs_school_js.svg"
+              alt="rs_school"
+          /></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
