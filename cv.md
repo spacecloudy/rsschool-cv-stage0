@@ -41,8 +41,8 @@ function multiply(a, b){
 #### Education
 
 - _Tomsk State University, Faculty of Geology and Geography, specialty meteorology_
-- _additional education in Tomsk State University Faculty of Ecology : ecologist_
-- _accounting courses_
+- _Additional education in Tomsk State University Faculty of Ecology : ecologist_
+- _Accounting courses_
 - _RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)_
 
 #### English
