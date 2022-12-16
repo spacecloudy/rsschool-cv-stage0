@@ -7,18 +7,18 @@ html {
 }
 
 body {
+  display: flex;
   font-family: Roboto-Regular;
   min-height: 100vh; /*мин высота body не может быть меньше высоты страницы*/
   margin: 0;
   padding: 0;
-  display: flex;
   flex-direction: column; /*переопределили направление главной оси*/
   justify-content: space-between; /*определяет выравнивание элементов по главной оси (по умолчанию у flexbox главная ось горизонтальная и свойство justify-content выравниваетэлементы по горизонтали), но т.к. мы переопределили направление главной оси, значит justify-content определяет выравнивание по вертикали*/
   /*Свойство justify-content: space-between; указывает, что все элементы размещаются на максимальном расстоянии друг от друга, крайние прижаты к границам родителя.*/
 }
 * {
   box-sizing: border-box; /*Благодаря свойству box-sizing: border-box; границы и внутренние отступы будут учитываться в значениях, которые вы указываете в ширине и высоте элемента. Это упрощает работу с размерами, позволяет указывать их более логично*/
-  border: 1px solid red; /* добавляет границы блокам*/
+  /* border: 1px solid red; добавляет границы блокам*/
 }
 .container {
   max-width: 1440px; /*ограничивает ширину контйнера (контейнер будет сремится занять всю ширину окна браузера, пока ширина окна не превышает 1440px)*/
@@ -125,12 +125,8 @@ a:hover {
 }
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /*позиционирование элементов*/
+  align-items: center; /*выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении, Блоки стоят по центру поперечной оси.*/
   margin: 0 auto;
-  color: #fff;
-}
-.github {
-  color: #fff;
-  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
