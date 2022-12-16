@@ -59,8 +59,7 @@ body {
   display: flex; /*создание флекс контейнера*/
   flex-direction: column; /*задаёт направление основных осей в контейнере и тем самым определяет положение флексов в контейнере. Сolumn-Главная ось располагается вертикально и направлена сверху вниз.*/
   text-align: center;
-  text-transform: uppercase;
-  /*Первый символ каждого слова в предложении будет заглавным. Остальные символы свой вид не меняют.*/
+  text-transform: uppercase; /**Все символы текста становятся прописными (верхний регистр)*/
 }
 .text-italic {
   font-style: italic;
@@ -120,7 +119,7 @@ a:hover {
 
 .footer {
   background-color: rgb(124, 189, 255);
-  padding: 20px;
+  padding: 10px;
 }
 .footer-container {
   display: flex;
