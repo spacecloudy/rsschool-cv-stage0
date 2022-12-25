@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Inika;
+  src: url("/rsschool-cv/plants/assets/fonts/Inika.ttf");
+}
+* {
+  box-sizing: border-box; /*Благодаря свойству box-sizing: border-box; границы и внутренние отступы будут учитываться в значениях, которые вы указываете в ширине и высоте элемента. Это упрощает работу с размерами, позволяет указывать их более логично*/
+  border: 1px solid red; /*добавляет границы блокам*/
+}
+
+.body {
+  display: flex;
+}
+.header {
+  background-color: rgba(237, 242, 236, 1);
+}
+.nav-bar {
+  display: flex; /*размещение всех элементов в одну строку*/
+  justify-content: flex-end; /*сдвинуть элементы вправо*/
+  align-items: center; /*выровнять по центру*/
+  list-style: none; /*убираем стандартные маркеры*/
+}
