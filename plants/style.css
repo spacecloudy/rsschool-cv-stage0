@@ -2,78 +2,112 @@
   font-family: Inika;
   src: url("/rsschool-cv/plants/assets/fonts/Inika.ttf");
 }
-.html {
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(/assets/fonts/Inter-Regular.ttf);
+}
+html {
   scroll-behavior: smooth; /*включает плавную прокрутку*/
   box-sizing: border-box; /*Благодаря свойству box-sizing: border-box; границы и внутренние отступы будут учитываться в значениях, которые вы указываете в ширине и высоте элемента. Это упрощает работу с размерами, позволяет указывать их более логично*/
 }
-/*
- *,
+*,
 *::before,
 *::after {
   box-sizing: inherit; /*наследовать от родителя*/
-
-.body {
-  display: flex;
-  font-family: Inika;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: normal;
+}
+* {
+  box-sizing: border-box; /*Благодаря свойству box-sizing: border-box; границы и внутренние отступы будут учитываться в значениях, которые вы указываете в ширине и высоте элемента. Это упрощает работу с размерами, позволяет указывать их более логично*/
   border: 1px solid red; /*добавляет границы блокам*/
 }
+body {
+  font-family: Inika;
+  margin: 0;
+  padding: 0;
+  flex-direction: column; /*переопределили направление главной оси*/
+  justify-content: center; /*определяет выравнивание элементов по главной оси (по умолчанию у flexbox главная ось горизонтальная и свойство justify-content выравниваетэлементы по горизонтали), но т.к. мы переопределили направление главной оси, значит justify-content определяет выравнивание по вертикали*/
+  /*Свойство justify-content: space-between; указывает, что все элементы размещаются на максимальном расстоянии друг от друга, крайние прижаты к границам родителя.*/
+}
+
 .header {
   background-color: rgba(237, 242, 236, 1);
-  display: flex;
+  height: 134px;
 }
 .container {
   display: flex;
   align-items: center; /*выровнять по центру*/
+  width: 1220px;
+  height: 50px;
 }
 .header-container {
   display: flex;
-
   flex-wrap: wrap; /*отвечает за перенос контента, чтобы не наезжали другна друга  а переносились на новую строку*/
   align-items: center;
+}
+
+.header-logo {
   justify-content: space-between;
 }
-.header-logo {
-  display: flex;
-}
 
-.menu {
-  display: flex;
-  justify-content: flex-end; /*сдвинуть элементы вправо*/
-}
-
-.nav-list {
-  margin: 0 auto;
+.logo-header-link {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
   display: flex; /*размещение всех элементов в одну строку*/
-  justify-content: flex-end; /*сдвинуть элементы вправо*/
+}
+.header-nav {
+  margin: 0 auto;
   align-items: center; /*выровнять по центру*/
+}
+.nav-list {
+  display: flex; /*размещение всех элементов в одну строку*/
   list-style: none; /*убираем стандартные маркеры*/
   flex-wrap: wrap; /*перенос контента на другую строку*/
 }
 .header-items {
   margin-right: 46px;
 }
-.header-logo {
-}
+
 .header-items:last-child {
   margin-right: 0;
 }
-.logo-header-link {
-  text-decoration: none; /* Отменяем подчеркивание у ссылки */
-  display: flex; /*размещение всех элементов в одну строку*/
-}
+
 .nav-link {
   /*добавляем отступы между элементами списка*/ /*Отступы добавляем ссылкам, а не элементам списка. Это позволяет увеличить площадь, по которой можно кликнуть, чтобы перейти по ссылке, и улучшает удобство пользования приложением.*/
   justify-content: flex-end; /*сдвинуть элементы вправо*/
-
   font-size: 16px; /*размер шрифта ссылок*/
   transition: 0.3s; /*Чтобы свойства менялись плавно*/
-
   color: rgb(20, 33, 9); /*цвет ссылкам*/
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 
   /* Так как ссылки - строчные элементы, вертикальные padding у них создаются, но не отталкивают другие элементы. Для строчных элементов вместо вертикальных padding удобнее указывать высоту строки.*/
+}
+
+/*BODY*/
+
+.welcome-info {
+  display: flex;
+  justify-content: center;
+}
+.welcome-text {
+  display: flex;
+  display: flex;
+  width: 549px;
+  height: 101px;
+  left: 782px;
+  top: 98px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  /* or 111% */
+  color: #717171;
+}
+.welcome-title-text {
+  display: flex;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  /* or 175% */
+  color: #636060;
 }
