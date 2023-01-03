@@ -29,15 +29,20 @@ body {
 }
 
 .header {
+  display: flex;
   background-color: rgba(237, 242, 236, 1);
   height: 134px;
+  justify-content: center;
 }
+
 .container {
+  justify-content: center;
   display: flex;
   align-items: center; /*выровнять по центру*/
-  width: 1220px;
-  height: 50px;
+  max-width: 1440px; /*ограничивает ширину контйнера (контейнер будет сремится занять всю ширину окна браузера, пока ширина окна не превышает 1440px)*/
+  margin: 0 auto; /*центрирует контейнер на странице по горизонтале*/
 }
+
 .header-container {
   display: flex;
   flex-wrap: wrap; /*отвечает за перенос контента, чтобы не наезжали другна друга  а переносились на новую строку*/
@@ -85,10 +90,12 @@ body {
 .welcome-info {
   display: flex;
   justify-content: center;
+  background-color: rgba(237, 242, 236, 1);
+}
+.colortext {
+  color: rgba(73, 154, 24, 1);
 }
 .welcome-text {
-  display: flex;
-  display: flex;
   width: 549px;
   height: 101px;
   left: 782px;
@@ -100,6 +107,9 @@ body {
   line-height: 50px;
   /* or 111% */
   color: #717171;
+}
+.welcome-title {
+  margin-bottom: 42px;
 }
 .welcome-title-text {
   display: flex;
