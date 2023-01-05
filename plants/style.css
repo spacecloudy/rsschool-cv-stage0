@@ -1,10 +1,10 @@
 @font-face {
-  font-family: Inika;
+  font-family: "Inika";
   src: url("/rsschool-cv/plants/assets/fonts/Inika.ttf");
 }
 @font-face {
-  font-family: "Inter", sans-serif;
-  src: url(/assets/fonts/Inter-Regular.ttf);
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 html {
   scroll-behavior: smooth; /*включает плавную прокрутку*/
@@ -27,26 +27,28 @@ body {
   justify-content: center; /*определяет выравнивание элементов по главной оси (по умолчанию у flexbox главная ось горизонтальная и свойство justify-content выравниваетэлементы по горизонтали), но т.к. мы переопределили направление главной оси, значит justify-content определяет выравнивание по вертикали*/
   /*Свойство justify-content: space-between; указывает, что все элементы размещаются на максимальном расстоянии друг от друга, крайние прижаты к границам родителя.*/
 }
-
 .header {
-  display: flex;
   background-color: rgba(237, 242, 236, 1);
   height: 134px;
-  justify-content: center;
+  position: relative;
 }
-
 .container {
-  justify-content: center;
-  display: flex;
-  align-items: center; /*выровнять по центру*/
-  max-width: 1440px; /*ограничивает ширину контйнера (контейнер будет сремится занять всю ширину окна браузера, пока ширина окна не превышает 1440px)*/
-  margin: 0 auto; /*центрирует контейнер на странице по горизонтале*/
+  max-width: 1222px;
+  margin: 0 auto; /*это свойство выравнивает container внутри его родителя по центру*/
 }
 
 .header-container {
   display: flex;
   flex-wrap: wrap; /*отвечает за перенос контента, чтобы не наезжали другна друга  а переносились на новую строку*/
   align-items: center;
+  justify-content: space-between;
+  margin: 0 auto; /*это свойство выравнивает container внутри его родителя по центру*/
+  max-width: 1440px; /*ограничивает ширину контйнера (контейнер будет сремится занять всю ширину окна браузера, пока ширина окна не превышает 1440px)*/
+  height: 134px;
+}
+
+.container {
+  margin: 0 auto; /*центрирует контейнер на странице по горизонтале*/
 }
 
 .header-logo {
@@ -58,12 +60,12 @@ body {
   display: flex; /*размещение всех элементов в одну строку*/
 }
 .header-nav {
-  margin: 0 auto;
   align-items: center; /*выровнять по центру*/
 }
-.nav-list {
+.header-list {
   display: flex; /*размещение всех элементов в одну строку*/
   list-style: none; /*убираем стандартные маркеры*/
+
   flex-wrap: wrap; /*перенос контента на другую строку*/
 }
 .header-items {
@@ -74,28 +76,32 @@ body {
   margin-right: 0;
 }
 
-.nav-link {
+.header-link {
   /*добавляем отступы между элементами списка*/ /*Отступы добавляем ссылкам, а не элементам списка. Это позволяет увеличить площадь, по которой можно кликнуть, чтобы перейти по ссылке, и улучшает удобство пользования приложением.*/
   justify-content: flex-end; /*сдвинуть элементы вправо*/
   font-size: 16px; /*размер шрифта ссылок*/
   transition: 0.3s; /*Чтобы свойства менялись плавно*/
   color: rgb(20, 33, 9); /*цвет ссылкам*/
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
-
   /* Так как ссылки - строчные элементы, вертикальные padding у них создаются, но не отталкивают другие элементы. Для строчных элементов вместо вертикальных padding удобнее указывать высоту строки.*/
 }
 
 /*BODY*/
-
+.welcome {
+  background-color: rgba(237, 242, 236, 1);
+}
 .welcome-info {
   display: flex;
   justify-content: center;
+  height: 534px;
+  align-items: center;
   background-color: rgba(237, 242, 236, 1);
 }
 .colortext {
   color: rgba(73, 154, 24, 1);
 }
 .welcome-text {
+  width: 1222px;
   width: 549px;
   height: 101px;
   left: 782px;
@@ -120,4 +126,84 @@ body {
   line-height: 35px;
   /* or 175% */
   color: #636060;
+}
+.about-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 666px;
+}
+.color-text-aboutinfo {
+  color: rgba(224, 103, 51, 1);
+}
+.colortext-about {
+  color: rgba(73, 154, 24, 1);
+}
+.about-text {
+  width: 1222px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  align-items: center;
+}
+.about-title {
+  margin-bottom: 42px;
+  flex-direction: column;
+  display: flex;
+}
+.about-title-text {
+  display: flex;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  /* or 175% */
+  color: #636060;
+}
+.service {
+  background-color: rgba(237, 242, 236, 1);
+}
+.service-container {
+  display: flex;
+  height: 1300px;
+top
+  justify-content: center;
+}
+.service-content {
+  font-family: Inika;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  width: 1007px;
+  height: 94px;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 109px;
+}
+.service-project {
+  height: 955px;
+}
+.service-items {
+  width: 330px;
+  height: 450px;
+}
+.prices {
+  height: 560px;
+}
+.prices-container {
+  display: flex;
+  height: 405px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.prices-menu {
+  width: 332px;
+  height: 391.01px;
+  font-size: 40px;
+  font-family: "Inter";
+  font-weight: 700;
+}
+.text-contacts {
 }
