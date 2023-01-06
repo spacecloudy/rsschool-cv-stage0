@@ -89,11 +89,14 @@ body {
 /*BODY*/
 .welcome {
   background-color: rgba(237, 242, 236, 1);
+  height: 532px;
 }
+
+
 .welcome-info {
   display: flex;
-  justify-content: center;
-  height: 534px;
+  justify-content: space-between;
+  height: 407.36px;
   align-items: center;
   background-color: rgba(237, 242, 236, 1);
 }
@@ -101,6 +104,7 @@ body {
   color: rgba(73, 154, 24, 1);
 }
 .welcome-text {
+  display: table;
   width: 1222px;
   width: 549px;
   height: 101px;
@@ -127,11 +131,15 @@ body {
   /* or 175% */
   color: #636060;
 }
+.about {
+  width: 1440px;
+  height: 666px;
+}
 .about-info {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 666px;
+  justify-content: space-between;
+  height: 479px;
 }
 .color-text-aboutinfo {
   color: rgba(224, 103, 51, 1);
@@ -140,7 +148,8 @@ body {
   color: rgba(73, 154, 24, 1);
 }
 .about-text {
-  width: 1222px;
+  width: 605px;
+  height: 350px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -206,4 +215,35 @@ top
   font-weight: 700;
 }
 .text-contacts {
+  font-family: "Inter";
+  font-weight: 700px;
+  font-size: 40px;
+  line-height: 50px;
+  width: 452px;
+  height: 103px;
+  }
+  .contacts {
+    height: 550px;
+    background-color: rgba(237, 242, 236, 1);
+  }
+  .contacts-conteiner {
+display: flex;
+  } 
+.contacts-p {
+  width: 195px;
+  height: 51px;
+  margin-left: 622px;
+color: rgba(73, 154, 24, 1);
+font-family: "inika";
+font-weight: 700;
+font-size: 40px;
+line-height: 52.12px; /*растояние между строками*/
+margin-top: 60px;
+align-items: center;
+}
+.footer {
+  height: 130px;
+}
+.footer-container {
+  height: 50px;
 }
