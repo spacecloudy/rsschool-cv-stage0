@@ -146,7 +146,7 @@ body {
   line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
-  border: 2px solid rgba(224, 103, 51, 1);
+  border: 2px solid rgba(224, 103, 51, 1); /*скругление краев у кнопки*/
   border-radius: 10px;
 }
 .about {
@@ -207,6 +207,7 @@ body {
   line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
+  margin-right: 142px;
 }
 .menu-project {
 }
@@ -218,14 +219,20 @@ body {
 .project-button {
   width: 161px;
   height: 50px;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(224, 103, 51, 1);
+  text-align: center;
+  border: 2px solid rgba(224, 103, 51, 1); /*скругление краев у кнопки*/
+  border-radius: 5x;
 }
 .service-content {
-  font-size: 40px;
-  line-height: 52px;
-  text-align: left;
   display: flex;
-  margin-top: 40px;
-  margin-left: 109px;
+  width: 1007px;
+  height: 94px;
 }
 .service-project {
   height: 955px;
