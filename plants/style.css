@@ -196,7 +196,7 @@ body {
   background-color: rgba(237, 242, 236, 1);
 }
 .service-container {
-  height: 955px;
+  height: 1300px;
 }
 
 .colortext-service {
@@ -212,13 +212,13 @@ body {
   margin: 0;
 }
 
-.menu-info {
+/*.menu-info {
   display: flex;
   justify-content: space-between;
   width: 559px;
   height: 50px;
   margin-bottom: 38px;
-}
+}*/
 .project-button {
   width: 161px;
   height: 50px;
@@ -279,21 +279,27 @@ body {
   text-align: center;
   margin-top: 10px;
 }
+
+/*PRICES*/
+
 .prices {
   height: 560px;
 }
 .prices-container {
-  display: flex;
+  margin-top: 40px;
   height: 405px;
-  align-items: flex-end;
-  justify-content: space-between;
 }
 .prices-menu {
   width: 332px;
   height: 391.01px;
-  font-size: 40px;
+}
+.prices-title {
   font-family: "Inter";
+  font-style: normal;
   font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
 }
 .text-contacts {
   font-family: "Inter";
