@@ -37,6 +37,7 @@ body {
 .container {
   max-width: 1222px;
   margin: 0 auto; /*это свойство выравнивает container внутри его родителя по центру*/
+background-size: 100%;
 }
 
 .header-container {
@@ -63,6 +64,8 @@ body {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
   text-shadow: 0.5px 2px gray;
   display: flex; /*размещение всех элементов в одну строку*/
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 .header-link:hover {
   color: rgba(224, 103, 51, 1);
@@ -92,6 +95,8 @@ body {
   color: rgb(20, 33, 9); /*цвет ссылкам*/
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
   /* Так как ссылки - строчные элементы, вертикальные padding у них создаются, но не отталкивают другие элементы. Для строчных элементов вместо вертикальных padding удобнее указывать высоту строки.*/
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 /*BODY*/
@@ -193,9 +198,9 @@ body {
   background-color: rgba(237, 242, 236, 1);
 }
 .service-container {
-  display: flex;
+ 
   height: 1300px;
-  justify-content: center;
+ 
 }
 .colortext-service {
   width: 306px;
@@ -207,11 +212,14 @@ body {
   line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
-  margin-right: 142px;
+  margin: 0;
+  
 }
 .menu-project {
 }
 .menu-info {
+  display: flex;
+  justify-content: space-between;
   width: 559px;
   height: 50px;
   margin-bottom: 38px;
@@ -233,11 +241,23 @@ body {
   display: flex;
   width: 1007px;
   height: 94px;
+  justify-content: space-between;
+  margin-left: 109px;
+  margin-top: 40px;
 }
-.service-project {
+.service-cards {
+  width: 1222px;
   height: 955px;
+  margin-left: 109px;
+  margin-bottom: 121px;
+  margin-right: 109px;
+  margin-top: 224px;
 }
-.service-items {
+
+.service-card {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column: 116px /*отступы между колонками*/
   width: 330px;
   height: 450px;
 }
