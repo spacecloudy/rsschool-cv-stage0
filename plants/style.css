@@ -31,7 +31,9 @@ body {
   background-color: rgba(237, 242, 236, 1);
   height: 134px;
   position: relative;
+  width: 100%;
 }
+
 .container {
   max-width: 1222px;
   margin: 0 auto; /*это свойство выравнивает container внутри его родителя по центру*/
@@ -48,6 +50,8 @@ body {
 }
 
 .container {
+  align-items: center;
+  width: 1222px;
   margin: 0 auto; /*центрирует контейнер на странице по горизонтале*/
 }
 
@@ -57,7 +61,11 @@ body {
 
 .logo-header-link {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  text-shadow: 0.5px 2px gray;
   display: flex; /*размещение всех элементов в одну строку*/
+}
+.header-link:hover {
+  color: rgba(224, 103, 51, 1);
 }
 .header-nav {
   align-items: center; /*выровнять по центру*/
@@ -92,9 +100,9 @@ body {
   height: 532px;
 }
 
-
 .welcome-info {
   display: flex;
+  margin-top: 62px;
   justify-content: space-between;
   height: 407.36px;
   align-items: center;
@@ -104,39 +112,49 @@ body {
   color: rgba(73, 154, 24, 1);
 }
 .welcome-text {
-  display: table;
-  width: 1222px;
-  width: 549px;
-  height: 101px;
-  left: 782px;
-  top: 98px;
+  display: flex;
+  max-width: 549px; /*ограничевание ширины контейнера*/
+  height: 340px;
+  flex-direction: column; /*переопределили направление главной оси*/
+  justify-content: space-between;
+}
+
+.welcome-title {
+  margin-bottom: 42px;
+  margin-top: 0;
   font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 45px;
   line-height: 50px;
-  /* or 111% */
   color: #717171;
 }
-.welcome-title {
-  margin-bottom: 42px;
-}
 .welcome-title-text {
-  display: flex;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  /* or 175% */
   color: #636060;
+  margin-bottom: 48px;
+}
+.lean-form-submit {
+  width: 158px;
+  height: 44px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: 2px solid rgba(224, 103, 51, 1);
+  border-radius: 10px;
 }
 .about {
-  width: 1440px;
   height: 666px;
 }
 .about-info {
   display: flex;
+  margin-top: 93px;
   align-items: center;
   justify-content: space-between;
   height: 479px;
@@ -177,16 +195,34 @@ body {
 .service-container {
   display: flex;
   height: 1300px;
-top
   justify-content: center;
 }
-.service-content {
+.colortext-service {
+  width: 306px;
+  height: 94px;
+  color: rgba(73, 154, 24, 1);
   font-family: Inika;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menu-project {
+}
+.menu-info {
+  width: 559px;
+  height: 50px;
+  margin-bottom: 38px;
+}
+.project-button {
+  width: 161px;
+  height: 50px;
+}
+.service-content {
   font-size: 40px;
   line-height: 52px;
   text-align: left;
-  width: 1007px;
-  height: 94px;
   display: flex;
   margin-top: 40px;
   margin-left: 109px;
@@ -221,25 +257,25 @@ top
   line-height: 50px;
   width: 452px;
   height: 103px;
-  }
-  .contacts {
-    height: 550px;
-    background-color: rgba(237, 242, 236, 1);
-  }
-  .contacts-conteiner {
-display: flex;
-  } 
+}
+.contacts {
+  height: 550px;
+  background-color: rgba(237, 242, 236, 1);
+}
+.contacts-conteiner {
+  display: flex;
+}
 .contacts-p {
   width: 195px;
   height: 51px;
   margin-left: 622px;
-color: rgba(73, 154, 24, 1);
-font-family: "inika";
-font-weight: 700;
-font-size: 40px;
-line-height: 52.12px; /*растояние между строками*/
-margin-top: 60px;
-align-items: center;
+  color: rgba(73, 154, 24, 1);
+  font-family: "inika";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52.12px; /*растояние между строками*/
+  margin-top: 60px;
+  align-items: center;
 }
 .footer {
   height: 130px;
