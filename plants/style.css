@@ -358,25 +358,46 @@ body {
   margin-bottom: 38px;
 }
 
+/*CONTACTS*/
+
 .contacts {
   height: 550px;
   background-color: rgba(237, 242, 236, 1);
 }
-.contacts-conteiner {
+.contacts-container {
   display: flex;
+  flex-wrap: wrap;
+  height: 550px;
+}
+.woman-img {
+  margin-top: 53px;
+}
+.city-button {
+  width: 195px;
+  height: 51px;
 }
 .contacts-p {
   width: 195px;
   height: 51px;
-  margin-left: 622px;
+  margin-left: 113px;
   color: rgba(73, 154, 24, 1);
   font-family: "inika";
-  font-weight: 700;
   font-size: 40px;
   line-height: 52.12px; /*растояние между строками*/
   margin-top: 60px;
   align-items: center;
 }
+.contacts-city-button {
+  width: 450px;
+  height: 50px;
+  margin-top: 148px;
+  margin-left: 372px;
+  background: rgba(214, 231, 210, 1) url(/assets/svg/button-city.svg) no-repeat
+    right center; /*no-repeat не будет повторяться бэкграунд, находится элемент справа по центру*/
+  background-size: 16px; /*скольк по размеру должно быть изображение бэкграунда*/
+  border: 0; /*обнулить бордеры*/
+}
+
 .footer {
   height: 130px;
 }
