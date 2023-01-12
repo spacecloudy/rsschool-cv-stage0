@@ -152,6 +152,13 @@ body {
   border: 2px solid rgba(224, 103, 51, 1); /*скругление краев у кнопки*/
   border-radius: 10px;
 }
+.lean-form-submit:hover {
+  /*изменение цвета при наведении мышкой*/
+  color: rgba(224, 103, 51, 1);
+}
+
+/*ABOUT*/
+
 .about {
   height: 666px;
 }
@@ -167,30 +174,41 @@ body {
 }
 .colortext-about {
   color: rgba(73, 154, 24, 1);
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  height: 102px;
+  width: 463px;
+  left: 109px;
+  top: 161px;
+  margin-bottom: 42px;
 }
 .about-text {
   width: 605px;
   height: 350px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 45px;
+
   align-items: center;
+  left: 109px;
+  top: 161px;
 }
 .about-title {
-  margin-bottom: 42px;
   flex-direction: column;
   display: flex;
 }
 .about-title-text {
   display: flex;
   font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  /* or 175% */
   color: #636060;
+  height: 208px;
+  width: 605px;
+  left: 109px;
+  top: 303px;
+  border-radius: nullpx;
 }
 .service {
   background-color: rgba(237, 242, 236, 1);
@@ -212,13 +230,6 @@ body {
   margin: 0;
 }
 
-/*.menu-info {
-  display: flex;
-  justify-content: space-between;
-  width: 559px;
-  height: 50px;
-  margin-bottom: 38px;
-}*/
 .project-button {
   width: 161px;
   height: 50px;
@@ -305,13 +316,17 @@ body {
   margin-top: 0;
   margin-bottom: 60px;
 }
-.prices-item {
+.price-item {
+  height: 214px;
+  width: 250px;
 }
 .prices-form-container {
   display: flex;
   flex-wrap: wrap;
   border-radius: 20px;
   border: 1px solid rgba(227, 225, 213, 1);
+  margin: auto;
+  padding: inherit;
 }
 .prices-form-info {
   margin: 34px 41px;
@@ -331,6 +346,9 @@ body {
   line-height: 20px;
   color: rgba(0, 0, 0, 1);
 }
+.prices-item-field:last-child {
+  margin-bottom: 0px;
+}
 .prices-item-field::placeholder {
   /*стилизуем подсказку по псевдоселектору placeholder,т.е. указываем элемент на котором мы будем стилизовать -prices-item-field и указываем наш элемент placeholder*/
   font-family: "Inter";
@@ -338,8 +356,9 @@ body {
   font-size: 20px;
   line-height: 20px;
   color: rgba(0, 0, 0, 1);
-  margin-left: 40px;
+  padding: 40px;
 }
+
 .prices-contacts {
   text-align: right; /*выравнивание текста по правому краю*/
 }
@@ -357,6 +376,9 @@ body {
   letter-spacing: 0em;
   margin-bottom: 38px;
 }
+.colortext-about-price {
+  color: rgba(73, 154, 24, 1);
+}
 
 /*CONTACTS*/
 
@@ -368,6 +390,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   height: 550px;
+  align-items: flex-start;
 }
 .woman-img {
   margin-top: 53px;
@@ -379,24 +402,26 @@ body {
 .contacts-p {
   width: 195px;
   height: 51px;
-  margin-left: 113px;
+  margin-left: 64px;
   color: rgba(73, 154, 24, 1);
   font-family: "inika";
   font-size: 40px;
   line-height: 52.12px; /*растояние между строками*/
   margin-top: 60px;
-  align-items: center;
 }
 .contacts-city-button {
-  width: 450px;
+  min-width: 450px;
   height: 50px;
   margin-top: 148px;
-  margin-left: 372px;
+  padding-left: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgba(214, 231, 210, 1) url(/assets/svg/button-city.svg) no-repeat
     right center; /*no-repeat не будет повторяться бэкграунд, находится элемент справа по центру*/
   background-size: 16px; /*скольк по размеру должно быть изображение бэкграунда*/
   border: 0; /*обнулить бордеры*/
 }
+
+/*FOOTER*/
 
 .footer {
   height: 130px;
