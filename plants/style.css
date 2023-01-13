@@ -17,7 +17,7 @@ html {
 }
 * {
   box-sizing: border-box; /*Благодаря свойству box-sizing: border-box; границы и внутренние отступы будут учитываться в значениях, которые вы указываете в ширине и высоте элемента. Это упрощает работу с размерами, позволяет указывать их более логично*/
-  border: 1px solid red; /*добавляет границы блокам*/
+  /*border: 1px solid red; /*добавляет границы блокам*/
 }
 body {
   font-family: Inika;
@@ -61,10 +61,14 @@ body {
 }
 
 .logo-header-link {
+  color: rgb(20, 33, 9); /*цвет ссылкам*/
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
   text-shadow: 0.5px 2px gray;
   display: flex; /*размещение всех элементов в одну строку*/
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo-header-link:hover {
+  color: rgba(224, 103, 51, 1);
 }
 .header-link:hover {
   color: rgba(224, 103, 51, 1);
@@ -105,7 +109,7 @@ body {
 
 .welcome-info {
   display: flex;
-  margin-top: 62px;
+  margin-top: 0px;
   justify-content: space-between;
   height: 407.36px;
   align-items: center;
@@ -141,6 +145,7 @@ body {
   margin-bottom: 48px;
 }
 .lean-form-submit {
+  transition: 0.3s;
   width: 158px;
   height: 44px;
   font-family: Inter;
@@ -154,7 +159,7 @@ body {
 }
 .lean-form-submit:hover {
   /*изменение цвета при наведении мышкой*/
-  color: rgba(224, 103, 51, 1);
+  background: rgba(224, 103, 51, 1);
 }
 
 /*ABOUT*/
@@ -231,6 +236,7 @@ body {
 }
 
 .project-button {
+  transition: 0.3s;
   width: 161px;
   height: 50px;
   font-family: "Inika";
@@ -243,6 +249,10 @@ body {
   border: 2px solid rgba(224, 103, 51, 1); /*скругление краев у кнопки*/
   border-radius: 5px;
 }
+.project-button:hover {
+  background: rgba(224, 103, 51, 1);
+  color: white;
+}
 .service-content {
   display: flex;
   flex-wrap: wrap;
@@ -250,7 +260,7 @@ body {
   height: 94px;
   justify-content: space-between;
   margin-left: 109px;
-  margin-top: 40px;
+  padding-top: 40px;
   margin-bottom: 90px;
 }
 .service-cards {
@@ -329,9 +339,18 @@ body {
   padding: inherit;
 }
 .prices-form-info {
-  margin: 34px 41px;
+  padding: 34px 41px;
+}
+.select {
+  border-radius: 20px;
+  border: 1px solid rgba(227, 225, 213, 1);
+  width: 332px;
+  height: 282.01px;
+  padding: 34px 41px;
 }
 select {
+  border-radius: 20px;
+  border: 1px solid rgba(227, 225, 213, 1);
   margin-bottom: 32px;
   padding-left: 40px;
   padding-right: 40px;
