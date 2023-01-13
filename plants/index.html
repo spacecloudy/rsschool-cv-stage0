@@ -196,16 +196,23 @@
           <div class="prices-container">
             <div class="prices-menu">
               <h3 class="prices-text">Prices</h3> 
-              <form action="" class="prices-item">
-                <fieldset class="prices-form-container"> 
-                  <p class="prices-form-info">
-                    <input type="text" class="prices-item-field" placeholder="Basics">
-                    <input type="text" class="prices-item-field" placeholder="Standard">
-                    <input type="text" class="prices-item-field" placeholder="Pro care">
-                  </p>
-
-                </fieldset>
-              </form>
+              <div class="select">
+                <select id="standard-select">
+                  <option value="Basic">Basic</option>
+                  <option value="Standsart">Option 2</option>
+                  <option value="Pro care">Option that has too long of a value to fit</option>
+                </select>
+                <select id="standard-select">
+                  <option value="Standsart">Standsart</option>
+                  <option value="Option 2">Option 2</option>
+                  <option value="Option length">Option that has too long of a value to fit</option>
+                </select>
+                <select id="standard-select">
+                  <option value="Pro care">Pro care</option>
+                  <option value="Option 2">Option 2</option>
+                  <option value="Option length">Option that has too long of a value to fit</option>
+                </select>
+              </div>
                    </div>
             <div class="prices-contacts">
               <div class="text-contacts">
@@ -235,9 +242,13 @@
           
               <img src="/assets/png/contact_woman.png" alt="Contacts-image" width="400px" height="496.99px" class="woman-img"/>
               <h2 class="contacts-p"> Contact us</h2>
-            <p class="contacts-button">
-              <input type="text" class="contacts-city-button" placeholder="City">
-                          </p>
+           <div class="select-choise-city">
+            <select id="select-city">
+              <option value="City">City</option>
+              <option value="Standsart">Option 2</option>
+              <option value="Pro care">Option that has too long of a value to fit</option>
+            </select>
+           </div>
             </div>
         </div>
       </section>
@@ -248,7 +259,50 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
-
+          <a href="https://github.com/spacecloudy" class="data-link">
+            © 2022 github
+          </a>
+          <a href="https://rs.school/js-stage0/" class="rss-link">
+            Rolling Scopes School
+          </a>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="" class="social-link">
+                <img
+                  src="./assets/svg/inst.svg"
+                  alt="instagram"
+                  class="social-img"
+                />
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link">
+                <img
+                  src="./assets/svg/fb.svg"
+                  alt="facebook"
+                  class="social-img"
+                />
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link">
+                <img
+                  src="./assets/svg/tv.svg"
+                  alt="twiter"
+                  class="social-img"
+                />
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link">
+                <img
+                  src="./assets/svg/pint.svg"
+                  alt="pinterest"
+                  class="social-img"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
