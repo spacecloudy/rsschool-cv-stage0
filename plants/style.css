@@ -160,6 +160,7 @@ body {
 .lean-form-submit:hover {
   /*изменение цвета при наведении мышкой*/
   background: rgba(224, 103, 51, 1);
+  color: white;
 }
 
 /*ABOUT*/
