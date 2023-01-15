@@ -194,7 +194,6 @@ body {
 .about-text {
   width: 605px;
   height: 350px;
-
   align-items: center;
   left: 109px;
   top: 161px;
@@ -331,17 +330,7 @@ body {
   height: 214px;
   width: 250px;
 }
-.prices-form-container {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 20px;
-  border: 1px solid rgba(227, 225, 213, 1);
-  margin: auto;
-  padding: inherit;
-}
-.prices-form-info {
-  padding: 34px 41px;
-}
+
 .select {
   border-radius: 20px;
   border: 1px solid rgba(227, 225, 213, 1);
