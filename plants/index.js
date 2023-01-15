@@ -1,1 +1,1 @@
-console.log(score:100/100);
+console.log("score:100/100");
