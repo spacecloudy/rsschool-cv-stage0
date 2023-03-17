@@ -1,1 +1,1 @@
-https://rolling-scopes-school.github.io/spacecloudy-JSFEPRESCHOOL2022Q4/plants/
+https://spacecloudy.github.io/rsschool-cv/cv
