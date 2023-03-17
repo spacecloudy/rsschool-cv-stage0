@@ -7,9 +7,9 @@
 #### Contacts:
 
 - **Email:** spreecivic@hmail.com
-- **GitHub:** https://github.com/whitehumster/
-- **Discord:** @whitehumster#6912
-- **Telegram:** @whitehumster
+- **GitHub:** https://github.com/spacecloudy/
+- **Discord:** @spacecloudy#6912
+- **Telegram:** @spacecloudy
 
 #### About me
 
